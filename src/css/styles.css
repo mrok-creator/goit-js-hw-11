@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+#search-box {
+  font: inherit;
+  padding: 8px;
+  max-width: 320px;
+  margin-bottom: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 85%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.search-input {
+  width: 300px;
+  border-radius: 4px 4px 4px 4px;
+  border: 1px solid;
+  background-color: #f8f8f8;
+  padding: 8px 10px;
+  font: inherit;
+}
+.form-btn {
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  border: 1px solid;
+  background-color: #c8c8c8;
+  border-radius: 4px 4px 4px 4px;
+  cursor: pointer;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.gallery__link {
+  width: calc((100% - 120px) / 4);
+  margin: 15px;
+}
+
+.gallery-item {
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+
+.gallery-item__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.load-more {
+  display: block;
+  margin: 25px auto 0 auto;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  font: inherit;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.scroll-btn {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: flex-end;
+  right: 30px;
+  bottom: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 3;
+
+  color: #90b0e8;
+  font-size: 40px;
+}
