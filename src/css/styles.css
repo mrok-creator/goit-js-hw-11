@@ -64,6 +64,13 @@ body {
   border-radius: 4px 4px 4px 4px;
   cursor: pointer;
 }
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: rgb(180, 180, 180);
+  transition: all 0.3s;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +80,15 @@ body {
 .gallery__link {
   width: calc((100% - 120px) / 4);
   margin: 15px;
+  border: 2px solid rgb(241, 238, 238);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.gallery__link:hover,
+.gallery__link:focus {
+  transform: scale(1.05);
 }
 
 .gallery-item {
@@ -127,4 +143,9 @@ body {
 
   color: #90b0e8;
   font-size: 40px;
+}
+
+.load-more:hover,
+.scroll-btn:hover {
+  background-color: #c3c3c3;
 }
